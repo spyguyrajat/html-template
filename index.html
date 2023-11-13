@@ -7,14 +7,16 @@
   </head>
   <body>
     <!--This is a comment-->
-    <h1>📘 The Code Magazine</h1>
+    <header class="main-header">
+      <h1>📘 The Code Magazine</h1>
 
-    <nav>
-      <a href="blog.html">Blog</a>
-      <a href="#">Challenges</a>
-      <a href="#">FlexBox</a>
-      <a href="#">CSS Grid</a>
-    </nav>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">FlexBox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+    </header>
 
     <header>
       <article>
@@ -23,7 +25,7 @@
 
           <img src="img/laura-jones.jpg" height="50px" alt="Author picture" />
 
-          <p>
+          <p id="author">
             Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027
           </p>
           <img
@@ -88,28 +90,30 @@
         <p>Hopefully you learned something new here. See you next time!</p>
       </article>
 
-      <h4>Related Posts</h4>
+      <aside>
+        <h4>Related Posts</h4>
 
-      <ul>
-        <li>
-          <img src="img/related-1.jpg" width="75px" />
-          <a href="#"> How to Learn Web Development</a>
-          <p>by Rajat kumar</p>
-        </li>
-        <li>
-          <img src="img/related-2.jpg" width="75px" />
-          <a href="#"> The Unknown powers of CSS</a>
-          <p>by Rajat kumar</p>
-        </li>
-        <li>
-          <img src="img/related-3.jpg" width="75px" />
-          <a href="#"> Why JavaScript is Awesome</a>
-          <p>by Rajat kumar</p>
-        </li>
-      </ul>
+        <ul class="related">
+          <li>
+            <img src="img/related-1.jpg" width="75px" />
+            <a href="#"> How to Learn Web Development</a>
+            <p class="related-author">by Rajat kumar</p>
+          </li>
+          <li>
+            <img src="img/related-2.jpg" width="75px" />
+            <a href="#"> The Unknown powers of CSS</a>
+            <p class="related-author">by Rajat kumar</p>
+          </li>
+          <li>
+            <img src="img/related-3.jpg" width="75px" />
+            <a href="#"> Why JavaScript is Awesome</a>
+            <p class="related-author">by Rajat kumar</p>
+          </li>
+        </ul>
+      </aside>
     </header>
     <footer>
-      <p>Copyright &copy; 2023 by Rajat Kumar</p>
+      <p id="copyright">Copyright &copy; 2023 by Rajat Kumar</p>
     </footer>
   </body>
 </html>
